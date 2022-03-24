@@ -1,5 +1,6 @@
 #include <iostream>
 #include <stdlib.h>
+#include <conio.h>
 
 using namespace std;
 
@@ -52,8 +53,8 @@ int main()
     {
         if(i==1)
         {
-        cout << "Ingrese la nota del estudiante" << endl;
-        cin >> notaindividual;
+        printf("Ingrese la nota del estudiante\n");
+        scanf("%d", &notaindividual);
         if(notaindividual>20 || notaindividual<0)
         {
         printf("Nota invalida");
@@ -78,16 +79,12 @@ int main()
     }
 
     printf("\Datos de la seccion\n\n");
-
-
+    
     promedio=suma_notas/seccionn;
     cout << "Promedio de la seccion:\n" + to_string (promedio) << endl;
     cout << "Numero de Aprobados:\n" + to_string (aprobados) << endl;
     cout << "Numero de Reprobados:\n" + to_string (reprobados) << endl;
     cout << "Estudiantes:\n" + to_string (seccionn) << endl;
 
-    return 0;
-
-
-
+    getch();
 }
